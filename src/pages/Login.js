@@ -20,7 +20,11 @@ const Login = () => {
     document.title = "Login - My-Instagram"
   }, [])
 
-  return <>I am the login page</>
+  return (
+    <div className="container flex mx-auto max-w-screen-md items-center h-screen">
+      <p>I have no idea what this means</p>
+    </div>
+  )
 }
 
 export default Login
