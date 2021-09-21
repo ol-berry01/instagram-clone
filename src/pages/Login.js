@@ -27,10 +27,22 @@ const Login = () => {
       </div>
 
       <div className="flex flex-col w-2/5">
-        <p>I will be the form</p>
+        <h1 className="flex justify-center w-full">
+          <img className="mt-2 mb-4 w-6/12" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" alt="" />
+        </h1>
+
+        {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
+
+        <form onSubmit={handleLogin} method="POST">
+          <input aria-label="Enter your email address" type="email" placeholder="Email Address" className="text-sm text-grey-base w-full mb-2 mr-3 px-4 py-5 h-2 border border-grey-primary rounded " />
+        </form>
       </div>
     </div>
   )
 }
 
 export default Login
+
+// text-red-primary
+// text-grey-base
+// border-grey-primary
