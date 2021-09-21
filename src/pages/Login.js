@@ -37,6 +37,14 @@ const Login = () => {
           <input aria-label="Enter your email address" type="email" placeholder="Email Address" className="text-sm text-grey-base w-full mb-2 mr-3 px-4 py-5 h-2 border border-grey-primary rounded " onChange={({ target }) => setEmailAddress(target.value)} />
 
           <input aria-label="Enter your password" type="password" placeholder="Password" className="text-sm text-grey-base w-full mb-2 mr-3 px-4 py-5 h-2 border border-grey-primary rounded " onChange={({ target }) => setPassword(target.value)} />
+          <button
+            disabled={isInvalid}
+            type="submit"
+            className={`bg-blue-500 text-white w-full rounded h-8 font-bold
+            ${isInvalid && "opacity-50"}`}
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>
@@ -48,3 +56,4 @@ export default Login
 // text-red-primary
 // text-grey-base
 // border-grey-primary
+// bg-blue-medium
