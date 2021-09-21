@@ -34,7 +34,7 @@ const Login = () => {
         {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
 
         <form onSubmit={handleLogin} method="POST">
-          <input aria-label="Enter your email address" type="email" placeholder="Email Address" className="text-sm text-grey-base w-full mb-2 mr-3 px-4 py-5 h-2 border border-grey-primary rounded " />
+          <input aria-label="Enter your email address" type="email" placeholder="Email Address" className="text-sm text-grey-base w-full mb-2 mr-3 px-4 py-5 h-2 border border-grey-primary rounded " onChange={({ target }) => console.log(target.value)} />
         </form>
       </div>
     </div>
