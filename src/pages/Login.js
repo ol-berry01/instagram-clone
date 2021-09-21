@@ -22,7 +22,13 @@ const Login = () => {
 
   return (
     <div className="container flex mx-auto max-w-screen-md items-center h-screen">
-      <p>I have no idea what this means</p>
+      <div className="flex w-3/5">
+        <img className="max-w-full" src="https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png" alt="iPhone with Instagram on screen" />
+      </div>
+
+      <div className="flex flex-col w-2/5">
+        <p>I will be the form</p>
+      </div>
     </div>
   )
 }
