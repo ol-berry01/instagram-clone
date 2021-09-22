@@ -27,7 +27,7 @@ const Login = () => {
       </div>
 
       <div className="flex flex-col w-2/5">
-        <div className="flex flex-col items-center bg-white mb-4 p-4 order border-grey-primary">
+        <div className="flex flex-col items-center bg-white mb-4 p-4 order border-grey-primary rounded">
           <h1 className="flex justify-center w-full">
             <img className="mt-2 mb-4 w-6/12" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png" alt="" />
           </h1>
@@ -41,14 +41,14 @@ const Login = () => {
             <button
               disabled={isInvalid}
               type="submit"
-              className={`bg-blue-500 text-white w-full rounded h-8 font-bold
+              className={`bg-blue-medium text-white w-full rounded h-8 font-bold
             ${isInvalid && "opacity-50"}`}
             >
               Login
             </button>
           </form>
         </div>
-        <div className="flex justify-center items-center flex-col w-flull bg0white p-4 border border-grey-primary">
+        <div className="flex justify-center items-center flex-col w-flull bg-white p-4 border border-grey-primary rounded">
           <p className="text-sm">
             Don't have an account?{` `}
             <Link className="font-bold text-blue-medium" to="/signup">
@@ -62,9 +62,3 @@ const Login = () => {
 }
 
 export default Login
-
-// text-red-primary
-// text-blue-medium
-// text-grey-base
-// border-grey-primary
-// bg-blue-medium
